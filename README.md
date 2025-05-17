@@ -35,3 +35,18 @@ Cloner le dépôt ou copier les fichiers dans votre htdocs
 Lancer un serveur local (XAMPP, WAMP)
 
 Ouvrir http://localhost/GestioMDP/public/index.php
+
+Structure
+
+GestioMDP/
+├── config/
+│   └── database.php
+├── app/
+│   └── controllers/
+│       ├── add.php
+│       ├── delete.php
+│       ├── update.php
+│       ├── encrypt.php
+│       └── decrypt.php
+├── public/
+│   └── index.php
