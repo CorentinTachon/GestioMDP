@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt = $pdo->prepare("INSERT INTO passwords (site, password, created_at, updated_at) VALUES (?, ?, ?, ?)");
         $stmt->execute([$site, $encrypted, $created_at, date('Y-m-d H:i:s')]);
         
-        header('Location: ../../public/index.php²&');
+        header('Location: ../../public/index.php');
         exit;
     }
 }
